@@ -79,10 +79,13 @@ const RensoTenjiArray1 ={
   }
     
    function vib5(){
+   arr1 = [];
+   arr1.push(RensoTenjiArray1.s);
+   arr1.push(RensoTenjiArray1.o);
+   arr1.push(RensoTenjiArray1.s);
+   
     window.navigator.vibrate(
-		RensoTenjiArray1.s,
-		RensoTenjiArray1.o,
-		RensoTenjiArray1.s		
+		arr1
     );
 
    }
