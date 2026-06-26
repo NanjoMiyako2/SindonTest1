@@ -13,7 +13,23 @@ style="font:20pt MS ゴシック; width:100px; height:200px"/>
 <input type="button" onclick="vib3()" value="振動３"
 style="font:20pt MS ゴシック; width:100px; height:200px"/>
 
+
+<hr>
+
+
+<input type="button" onclick="vib4()" value="振動4"
+style="font:20pt MS ゴシック; width:100px; height:200px"/>
+
+<hr>
+
 <script>
+
+const RensoTenjiArray1 ={
+	gaiji:[1000,100,  1000,100, 1000,100, 1000,100, 200,100,200,100,200,100, 200,100,200,100,200,100]  
+	a1:[1000,100, 1000,100,  1000,100]
+	b1:[1000,100, 1000,100,  1000,100]
+};
+
   function vib1(){
     //1000ms振動する
     window.navigator.vibrate(1000);
@@ -29,6 +45,12 @@ style="font:20pt MS ゴシック; width:100px; height:200px"/>
         200,200,200,200,200,200+400,
         200,200,200,200,200,200,200,200,200,200,200,200,200,200
       ]
+    );
+  }
+  
+   function vib4(){
+    window.navigator.vibrate(
+		RensoTenjiArray1.gaiji
     );
   }
 </script>
