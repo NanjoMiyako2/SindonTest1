@@ -1,0 +1,23 @@
+<input type="button" onclick="vib1()" value="振動１">
+<input type="button" onclick="vib2()" value="振動２">
+<input type="button" onclick="vib2()" value="振動３">
+
+<script>
+  function vib1(){
+    //1000ms振動する
+    window.navigator.vibrate(1000);
+  }
+    function vib2(){
+    //200ms振動、100ms止める、200ms振動、
+    window.navigator.vibrate([200,100,200]);
+  }
+  function vib3(){
+    window.navigator.vibrate(
+      [
+        200,200,200,200,200,200+400,
+        200,200,200,200,200,200+400,
+        200,200,200,200,200,200,200,200,200,200,200,200,200,200
+      ]
+    );
+  }
+</script>
